@@ -1,0 +1,472 @@
+/******************************************************************
+*******************************************************************
+
+Website: The Becca's World;
+Description: My Personal Website
+Author: Rebecca Cheng
+Author URI: http://www.rebeccecheng.me
+							
+Designed & Handcrafted by Rebecca Cheng from rebeccecheng.me
+									
+*******************************************************************
+******************************************************************/
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 9999;  
+}
+
+#loader{
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  margin-left: -17.5px;
+	  margin-top: -17.5px;
+	  background-size: contain;
+	  height: 35px;
+	  width: 35px;
+	  animation: elastic-rotation 1.33s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  
+   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9Il94MzhfU0VMRUNUX0xvZ28iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzEuOSAxNi4zIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzMS45IDE2LjMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik0yOS41LDIuNGMxLjYsMS42LDIuNCwzLjUsMi40LDUuOHMtMC44LDQuMi0yLjQsNS44Yy0xLjYsMS42LTMuNSwyLjQtNS44LDIuNGMtMS4zLDAtMi41LTAuNC0zLjgtMS4xYy0xLjItMC43LTIuMS0xLjQtMi42LTJjLTAuNS0wLjYtMC44LTEtMC45LTEuMmMtMC40LTAuNi0wLjMtMS4xLDAuMi0xLjRjMC42LTAuNCwxLjEtMC4zLDEuNSwwLjJjMCwwLjEsMC4yLDAuNCwwLjcsMC45YzAuNCwwLjUsMS4xLDEuMSwyLjEsMS42YzAuOSwwLjYsMS45LDAuOSwyLjgsMC45YzEuNywwLDMuMS0wLjYsNC4zLTEuOGMxLjItMS4yLDEuOC0yLjYsMS44LTQuM3MtMC42LTMuMS0xLjgtNC4zYy0xLjItMS4yLTIuNi0xLjgtNC4zLTEuOGMtMC44LDAtMS43LDAuNC0yLjYsMS4yUzE5LjUsNC43LDE5LDUuNGMtMC41LDAuNy0xLjIsMS44LTIuMiwzLjNjLTAuOCwxLjItMS40LDIuMi0xLjksMi44Yy0wLjUsMC42LTEuMSwxLjQtMS44LDIuM2MtMC44LDAuOS0xLjUsMS41LTIuMywxLjljLTAuOCwwLjQtMS42LDAuNi0yLjYsMC42Yy0yLjMsMC00LjItMC44LTUuOC0yLjRTMCwxMC40LDAsOC4yQzAsNS45LDAuOCw0LDIuNCwyLjRTNS45LDAsOC4yLDBDMTEsMCwxMy4zLDEuNywxNSw1LjJjMC4yLDAuNywwLjEsMS4xLTAuNiwxLjRDMTMuOCw2LjgsMTMuMyw2LjYsMTMsNkwxMi41LDVjLTAuMy0wLjctMC45LTEuMy0xLjctMnMtMS43LTEtMi42LTFDNi42LDIuMSw1LjEsMi43LDQsMy45UzIuMiw2LjUsMi4yLDguMnMwLjYsMy4xLDEuOCw0LjNzMi42LDEuOCw0LjMsMS44YzAuOCwwLDEuNy0wLjQsMi42LTEuMnMxLjYtMS41LDIuMS0yLjFjMC41LTAuNywxLjItMS44LDIuMi0zLjNjMC44LTEuMiwxLjQtMi4yLDEuOS0yLjhzMS4xLTEuNCwxLjgtMi4zczEuNS0xLjUsMi4zLTEuOUMyMS45LDAuMiwyMi43LDAsMjMuNiwwQzI1LjksMCwyNy45LDAuOCwyOS41LDIuNHoiLz48L2c+PC9zdmc+);
+
+}
+
+
+@keyframes elastic-rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/******************************************************************
+	General
+******************************************************************/		
+body,h1,h2,h3,h4,h5,h6,p {
+	font-family: "Varela Round", sans-serif;
+}
+
+body, html {
+	width: 100%;
+    height: 100%;
+    line-height: 1.8;
+}
+
+section{ display: block;}
+
+h1.title-lg {
+  font-size: 2.5em;
+  text-transform: uppercase; 
+  letter-spacing: 1px;
+  margin: 80px 0 0;
+}
+
+a {text-decoration: none;}
+
+.hide{display:none!important}
+
+.show{display:block!important}
+
+@media (max-width:600px) {.hide-small{display:none!important}}
+
+@media (min-width:993px){.hide-large{display:none!important}}
+
+@media (max-width:992px) and (min-width:601px){.hide-medium{display:none!important}}
+
+
+/******************************************************************
+  Padding & Margin
+******************************************************************/
+
+.section-padding { 
+	padding: 50px 100px;
+}
+
+.padding-large {
+  padding:12px 24px!important
+}
+
+.padding-footer {
+  padding-top:64px!important;
+  padding-bottom:64px!important
+}
+
+.padding-icons {
+  padding:24px 48px;
+}
+
+.margin-right{margin-right:16px!important}
+
+.section{margin-top:16px!important;margin-bottom:16px!important}
+
+/******************************************************************
+  Color
+******************************************************************/
+
+.white {
+	color: #FFF;
+}
+
+.black {
+  color:#fff!important;
+  background-color:#000!important
+}
+
+.light-grey{
+  color:#000!important;
+  background-color:#f1f1f1!important
+}
+
+/******************************************************************
+  Font
+******************************************************************/
+
+.font-xlarge {font-size:24px!important}
+
+.font-large{font-size:18px!important}
+
+/******************************************************************
+  Position 
+******************************************************************/
+.top{
+  top:0;
+  position:fixed;
+  width:100%;
+  z-index:999;
+}
+
+.display-bottomleft{ 
+  position:absolute;
+  left:0;
+  bottom:0;
+}
+
+.right{float:right!important}
+
+.center{text-align:center!important}
+
+/******************************************************************
+  Hover 
+******************************************************************/
+.hover-white:hover{
+  color:#000;
+  background-color:#fff;
+}
+.hover-black:hover{
+  color:#fff;
+  background-color:#000;
+}
+
+.hover-opacity-off:hover{opacity:1;}
+
+.hover-opacity:hover{opacity:0.60}
+
+.opacity{opacity:0.60}
+
+
+/******************************************************************
+	NavBar + Footer
+******************************************************************/	
+.bar .bar-item{
+  padding:8px 16px;
+  float:left;
+  width:auto;
+  border:none;
+  outline:none;
+  display:block;
+}
+
+.bar-block .bar-item{
+  width:100%;
+  display:block;
+  padding:8px 16px;
+  text-align:left;
+  border:none;
+  outline:none;
+  white-space:normal;
+  float:none;
+}
+
+.button {
+	color:#000;
+	background-color:#fff;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+.button:hover {
+	color: #000;
+	background-color: #ccc;
+	text-decoration: none;
+}
+
+.button:focus {
+	color: #000;
+	text-decoration: none;
+}
+
+.white-nav {
+  color:#000!important;
+  background-color:#fff!important
+}
+
+.square-button {
+  border:none;
+  display:inline-block;
+  outline:0;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+/******************************************************************
+	Parallax Effect 
+******************************************************************/
+.image-1, .image-2{
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	-webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+}
+
+.image-1 {
+	background-image: url("../image/main_page.jpg");
+	min-height: 100%;
+	opacity:0.85;
+}
+
+.image-2 {
+	background-image: url("../image/plants-bg.jpg");
+	min-height: 400px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .image-1, .image-2 {
+        background-attachment: scroll;
+    }
+}
+
+h1.home {
+	font-size: 2.5em;
+	font-weight: 200px;
+	line-height: 1.5;
+	padding: 130px 0 0;
+}
+
+.home b {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 0px 5px;
+}
+
+.rotate-color {
+	color: #6093e7;
+}
+
+
+/******************************************************************
+    ABOUT ME 
+******************************************************************/
+.about-me {
+	padding: 0px 40px 90px 40px;
+}
+
+.about-me h1 {
+	padding: 40px 30px;
+}
+
+.about-me p { 
+	font-size: 1em;
+	margin: 50px 0;
+}
+
+h1.arrow {
+	background: url('../image/arrow.png') no-repeat center bottom;
+	padding-bottom: 30px;
+}
+
+h1.title {
+	font-family: "Varela Round", georgia;
+    font-size: 15px;
+	text-transform: uppercase; 
+	font-weight: 300;
+}
+
+.myphoto {
+	padding: 10px 0px;
+	opacity: 0.8;
+}
+
+/******************************************************************
+      Portfolio/Work
+******************************************************************/
+
+a{color:#00a9c6; text-decoration:none;}
+a:hover{color:#666;}
+a,a:hover {
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+outline: none !important;
+}
+
+h2{font:300 2.5em Roboto,Arial,Helvetica;margin-bottom: 1.5em;}
+
+#works{padding:10em 1em;}
+#works figcaption a{border:1px solid #fff;margin-top: 1em;display: inline-block;color: #fff;padding: 2em 2em;}
+#works figcaption a:hover{text-decoration: none;padding: 0 3em;}
+
+
+/******************************************************************
+      Contact
+******************************************************************/
+.contact {
+  font-family: "Varela Round", georgia;
+  font-size: 15px;
+  text-align: center;
+  padding: 40px 30px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+#contact-form {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+label {
+  cursor: pointer;
+}
+
+textarea,
+input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  text-align: center;
+  background: none;
+  font-weight: 700;
+  font-family: "Varela Round", georgia;
+  font-size: 30px;
+  /*color: rgba(255, 255, 255, 1);*/
+  max-width: 90%;
+  padding: 1rem;
+  border: 2px dashed rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  cursor: text;
+}
+
+textarea {
+  text-align: left;
+  /* overflow:hidden; */
+  
+  resize: none;
+  width: 90%;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+textarea:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px dashed rgba(0, 0, 0, 0.1);
+}
+
+textarea:focus:required:valid {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+textarea:required:valid {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+input {
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+}
+
+input:required,
+textarea:required {
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+input:required:valid {
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+input:required:invalid {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  font-weight: 400;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  
+  text-align: center;
+  color: rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  font-weight: 400;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  
+  text-align: center;
+  color: rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  font-weight: 400;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.expanding {
+  vertical-align: top;
+}
+
+.send-icn {
+  fill: rgba(0, 0, 0, 1);
+}
+
+.send-icn:hover {
+  fill: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 2vmax;
+}
